@@ -18,6 +18,9 @@ public class RequestParamServlet extends HttpServlet {
 
         // paramName 은 username, age 같은 부분
         // 여기서 키 값을 출력하기 위해선 username, age 를 인자로 request.getParameter() 메서드를 호출해야 한다.
+        // 사실 request.getParameter() 는 쿼리 파라미터도(Get) 꺼낼 수 있고, HTML Form 내부 데이터도 (Post) 꺼낼 수 있다.
+        // 클라이언트 입장에서는 두 방식의 차이가 있지만, 서버 입장에서는 둘의 형식이 동일하므로 request.getParameter() 로 구분없이 조회 가능한 것이다.
+
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> System.out.println(paramName + "=" + request.getParameter(paramName)));
 
