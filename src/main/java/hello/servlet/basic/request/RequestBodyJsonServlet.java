@@ -29,10 +29,19 @@ public class RequestBodyJsonServlet extends HttpServlet {
 
         // JSON 을 객체로 파싱하기 위해서는 ObjectMapper 클래스의 도움이 필요하다.
         // readValue() 메서드에 받은 messageBody, 파싱하고 싶은 객체를 인자로 넣어주면 된다.
+        // 참고) ObjectMapper를 이용할경우 setter가 없이도 필드에 접근할 수 있다
         HelloData helloData = objectMapper.readValue(messageBody, HelloData.class);
 
         System.out.println("helloData.getUsername = " + helloData.getUsername());
         System.out.println("helloData = " + helloData.getAge());
+
+//        JSON 데이터를 뽑기 위해 한번 연습 ㅎ_ㅎ
+//        response.setContentType("application/json");
+//        response.setCharacterEncoding("UTF-8");
+//
+//        String responseBody = objectMapper.writeValueAsString(helloData);
+//
+//        response.getWriter().write(responseBody);
 
         response.getWriter().write("ok");
     }
