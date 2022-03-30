@@ -34,6 +34,14 @@ public class RequestBodyJsonServlet extends HttpServlet {
         System.out.println("helloData.getUsername = " + helloData.getUsername());
         System.out.println("helloData = " + helloData.getAge());
 
+//        JSON 데이터를 뽑기 위해 한번 연습 ㅎ_ㅎ
+//        response.setContentType("application/json");
+//        response.setCharacterEncoding("UTF-8");
+//
+//        String responseBody = objectMapper.writeValueAsString(helloData);
+//
+//        response.getWriter().write(responseBody);
+
         response.getWriter().write("ok");
     }
 }
