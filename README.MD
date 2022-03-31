@@ -15,12 +15,16 @@
 3. HttpServletRequest - 개요
 4. HttpServletRequest - 기본 사용법
 ---
+> 2022.03.29 (화요일)
 5. HTTP 요청 데이터 - 개요
 6. HTTP 요청 데이터 - GET 쿼리 파라미터
 7. HTTP 요청 데이터 - POST HTML Form
 8. HTTP 요청 데이터 - API 메세지 바디 - 단순 텍스트
 9. HTTP 요청 데이터 - API 메세지 바디 - JSON
+---
+> 2022.03.30 (수요일)
 10. HttpServletResponse - 기본 사용법
 11. HTTP 응답 데이터 - 단순 텍스트, HTML
-12. HTTp 응답 데이터 - API JSON
+12. HTTP 응답 데이터 - API JSON
 13. 정리
+---
