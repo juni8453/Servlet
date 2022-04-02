@@ -1,16 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: jeonbyeongjun
-  Date: 2022/04/02
-  Time: 4:09 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/jsp/members/save.jsp" method="post">
+    username: <input type="text" name="username" />
+    age : <input type="text" name="age" />
+    <button type="submit">전송</button>
+</form>
+</body>
 </html>
