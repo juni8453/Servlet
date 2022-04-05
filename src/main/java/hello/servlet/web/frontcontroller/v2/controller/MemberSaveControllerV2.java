@@ -18,6 +18,8 @@ public class MemberSaveControllerV2 implements ControllerV2 {
     public MyView process(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // MemberSaveController 또한 요청 파라미터 정보가 필요한거지 request, response 가 필요한 건 아니다.
+        // 그리고 request 를 없애면 Model 객체를 새로 만들어서 기존의 request 역할을 대체하면 된다.
         String username = request.getParameter("username");
         int age = Integer.parseInt(request.getParameter("age"));
 

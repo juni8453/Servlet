@@ -11,6 +11,5 @@ public interface ControllerV2 {
 
     // 기존 ControllerV1 Interface 의 메서드 (아무것도 반환하지 않는다)
     // void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
-
     MyView process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
 }
